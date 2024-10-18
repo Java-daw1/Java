@@ -10,12 +10,12 @@ public class SegundatandaEj {
 
 /*
     
-int MultiploDe = 5;
-
-  do {
-  System.out.println(MultiploDe);
-  MultiploDe = MultiploDe + 5;
-  } while (MultiploDe <= 100);
+    int i = 0;
+    
+    while(i <= 100) {
+      System.out.println(i);
+      i+=5;
+    }
 
 */
 
@@ -131,12 +131,15 @@ boolean esprimo= true;
 for (int n = 2; n < NumeroIntroducido; n++  ){
   if ((NumeroIntroducido % n) == 0) {
     esprimo=false;
+    break;
   }
 } 
 
 if (esprimo) {
   System.out.println("es primo");
-}else{
+}
+
+else{
   System.out.println("no es primo");
 }*/
 
@@ -145,30 +148,150 @@ y validados como distintos, el programa debe empezar por el menor de los enteros
 de 7 en 7. */
 
 /* 
-Scanner leer = new Scanner(System.in);
+  Scanner leer = new Scanner(System.in);
+  boolean SonIguales=false;
+  int numero1;
+  int numero2;
 
-System.out.println("introduce un numero");
-int numero=  leer.nextInt();
-System.out.println("introducción hasta cuanto quiere que llege");
-int numero2= leer.nextInt();
 
-do {
-  System.out.println(numero);
-  numero= numero + 7;
-} while (numero <= numero2);
-*/
+  do {
+    System.out.println("introduce un numero");
+    numero1=  leer.nextInt();
+
+    System.out.println("introducción otro numero");
+    numero2= leer.nextInt();
+
+    SonIguales= numero1==numero2;
+    
+    if (SonIguales) {
+      System.out.println("Los numeros introducidos son iguales, por favor vuele a introducir");
+    }
+
+
+
+  } while (SonIguales);
+
+  if (numero1 > numero2) {
+    
+    int aux = numero1;
+    numero1 = numero2;
+    numero2 = aux;
+  }
+
+  for (int i = numero1; i <= numero2; i+= 7) {
+      System.out.println(i);
+  }
+*/ 
 
 /*9.- Realiza un programa que vaya pidiendo números hasta que se introduzca un numero negativo y nos diga cuantos 
 números se han introducido, la media de los impares y el mayor de los pares. El número negativo sólo se utiliza para
 indicar el final de la introducción de datos pero no se incluye en el cómputo.*/
 
+/* 
+System.out.println("Por favor, vaya introduciendo números enteros.");
+    System.out.println("Puede terminar mediante la introducción de un número negativo.");
+
+    int numeroIntroducido;
+    int numeroDeElementos = 0;
+    int sumaImpares = 0;
+    int numeroDeElementosImpares = 0;
+    int maximoPar = 0;
+    
+    do {
+      numeroIntroducido = Integer.parseInt(System.console().readLine());
+      
+      if (numeroIntroducido >= 0) {
+        numeroDeElementos++;
+        if ((numeroIntroducido % 2) == 1) { // número impar
+          sumaImpares += numeroIntroducido;
+          numeroDeElementosImpares++;
+        } else { // número par
+          if (numeroIntroducido > maximoPar)
+            maximoPar = numeroIntroducido;
+        }
+      }
+    } while (numeroIntroducido >= 0);
+
+    System.out.println("Ha introducido " + numeroDeElementos + " números positivos.");
+    System.out.print("La media de los impares es ");
+    System.out.println(sumaImpares / numeroDeElementosImpares + ".");
+    System.out.println("El máximo de los pares es " + maximoPar + ".");
+  }
+*/
+
 // 10.- Realiza un programa que pida un número por teclado y que luego muestre ese número al revés.
 
+/*
+Scanner leer = new Scanner(System.in);
+
+int numeroIntroducido = 0;
+int ultimaCifra = 0;
+String resultado = "";
+
+System.out.println("introduce un numero");
+numeroIntroducido = leer.nextInt();
+
+for (int i = 0; numeroIntroducido >= 1; i++) {
+
+  ultimaCifra = numeroIntroducido % 10;
+  numeroIntroducido=numeroIntroducido / 10;
+  resultado += ultimaCifra;
+  
+}
+System.out.println(resultado);
+*/
 
 
 /*11.- Realiza un programa que pida primero un número y a continuación un dígito. El programa nos debe dar la posición
 (o posiciones) contando de izquierda a derecha que ocupa ese dígito en el número introducido.*/
 
+/* 
+System.out.print("Introduzca un número entero: ");
+    long numeroIntroducido = Integer.parseInt(System.console().readLine());
+
+    System.out.print("Introduzca un dígito: ");
+    int digito = Integer.parseInt(System.console().readLine());
+
+    System.out.print("Contando de izquierda a derecha, el " + digito);
+    System.out.println(" aparece dentro de " + numeroIntroducido);
+    System.out.print("en las siguientes posiciones: ");
+    
+    // se hace una copia del número introducido
+    long numero = numeroIntroducido;
+    
+    // añade un 1 al final por si el número introducido termina en ceros,
+    // por ej. 10, 1000, etc.
+    numero = numero * 10 + 1;
+    
+    // le da la vueta al número y calcula la longitud
+    
+    long volteado = 0;
+    int longitud = 0;
+    int posicion = 1;
+    
+    if (numero == 0) {
+      longitud = 1;
+    }
+    
+    while (numero > 0) {
+      volteado = (volteado * 10) + (numero % 10);
+      numero /= 10;
+      longitud++;
+    } // while
+        
+    // comprueba la posición
+    while (volteado != 1) {
+      if ((volteado % 10) == digito) {
+        System.out.print(posicion + " ");
+      }
+      volteado /= 10;
+      posicion++;
+    } // while
+
+    System.out.println();
+  }
+
+*/
 
 //12.- Escribe un programa que calcule el factorial de un número entero leído por teclado.
 
