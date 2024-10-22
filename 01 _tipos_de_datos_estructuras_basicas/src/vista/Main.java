@@ -1,6 +1,7 @@
 package vista;
 
-import ejercicios.Depurador;
+import ejercicios.DecimalBinario;
+//import ejercicios.Depurador;
 //import estudio_estructuras_basicas.EstudioEstructurasCondicionales;
 //import estudio_estructuras_basicas.EstudioEstructurasRepeticion;
 //import estudio_estructuras_basicas.Estudio_tipo_de_datos;
@@ -27,7 +28,8 @@ public class Main {
     //PrimeraTandaEj estudio = new PrimeraTandaEj();
     //SegundatandaEj estudio= new SegundatandaEj();
     //Parse estudio = new Parse();
-    Depurador estudio = new Depurador();
+    //Depurador estudio = new Depurador();
+    DecimalBinario estudio = new DecimalBinario();
 
   }
 }
