@@ -1,5 +1,6 @@
 package vista;
 
+import ejercicios.Depurador;
 //import estudio_estructuras_basicas.EstudioEstructurasCondicionales;
 //import estudio_estructuras_basicas.EstudioEstructurasRepeticion;
 //import estudio_estructuras_basicas.Estudio_tipo_de_datos;
@@ -8,7 +9,9 @@ package vista;
 //import ejercicios.Dniejercicio;
 //import ejercicios.Ejercicio01;
 //import ejercicios.PrimeraTandaEj;
-import ejercicios.SegundatandaEj;
+//import ejercicios.SegundatandaEj;
+//import ejercicios.Parse;
+
 
 public class Main {
   public static void main(String[] args) {
@@ -22,7 +25,9 @@ public class Main {
     // Dniejercicio dni = new Dniejercicio();
     // EstudioEstructurasRepeticion estudio = new EstudioEstructurasRepeticion();
     //PrimeraTandaEj estudio = new PrimeraTandaEj();
-    SegundatandaEj estudio= new SegundatandaEj();
+    //SegundatandaEj estudio= new SegundatandaEj();
+    //Parse estudio = new Parse();
+    Depurador estudio = new Depurador();
 
   }
 }
