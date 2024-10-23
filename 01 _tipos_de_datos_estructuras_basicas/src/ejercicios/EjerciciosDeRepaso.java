@@ -2,11 +2,11 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class DecimalBinario {
+public class EjerciciosDeRepaso {
 
 
 
-    public DecimalBinario(){
+    public EjerciciosDeRepaso(){
 
 //EJERCICIO 1 
 

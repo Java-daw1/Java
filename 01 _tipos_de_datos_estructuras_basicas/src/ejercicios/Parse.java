@@ -18,12 +18,6 @@ public class Parse {
         System.out.println("123456 en hexadecimal = " + Integer.toHexString(123456));
         System.out.println("135 en binario = " +Integer.toBinaryString(135));
 
-
-
-
-
-
-
         }
     }
 
