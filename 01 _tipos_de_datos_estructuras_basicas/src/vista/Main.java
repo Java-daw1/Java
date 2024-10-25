@@ -14,6 +14,7 @@ package vista;
 //import ejercicios.PrimeraTandaEj;
 //import ejercicios.SegundatandaEj;
 //import ejercicios.Parse;
+import ejerciciosDeRepaso2.Ejercicio1DeRepaso2;
 
 
 public class Main {
@@ -27,12 +28,18 @@ public class Main {
     // Calculoareas calcularAreas = new Calculoareas();
     // Dniejercicio dni = new Dniejercicio();
     // EstudioEstructurasRepeticion estudio = new EstudioEstructurasRepeticion();
-    //PrimeraTandaEj estudio = new PrimeraTandaEj();
-    //SegundatandaEj estudio= new SegundatandaEj();
-    //Parse estudio = new Parse();
-    //Depurador estudio = new Depurador();
-    //EjerciciosDeRepaso estudio = new EjerciciosDeRepaso();
-    //segundaTandaEJ.Ejercicio4 ejercicios = new segundaTandaEJ.Ejercicio4();
+    // PrimeraTandaEj estudio = new PrimeraTandaEj();
+    // SegundatandaEj estudio= new SegundatandaEj();
+    // Parse estudio = new Parse();
+    // Depurador estudio = new Depurador();
+    // EjerciciosDeRepaso estudio = new EjerciciosDeRepaso();
+    // segundaTandaEJ.Ejercicio4 ejercicios = new segundaTandaEJ.Ejercicio4();
+    ejerciciosDeRepaso2.Ejercicio2DeRepaso2 ejercicios = new ejerciciosDeRepaso2.Ejercicio2DeRepaso2();
+    
+
+
+
+
 
   }
 }
