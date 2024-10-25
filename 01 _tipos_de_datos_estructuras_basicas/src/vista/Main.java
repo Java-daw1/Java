@@ -1,6 +1,8 @@
 package vista;
 
-import ejercicios.EjerciciosDeRepaso;
+//import primeraTandaEJ.Ejercicio1;
+//import segundaTandaEJ.Ejercicio4;
+//import ejercicios.EjerciciosDeRepaso;
 //import ejercicios.Depurador;
 //import estudio_estructuras_basicas.EstudioEstructurasCondicionales;
 //import estudio_estructuras_basicas.EstudioEstructurasRepeticion;
@@ -29,7 +31,8 @@ public class Main {
     //SegundatandaEj estudio= new SegundatandaEj();
     //Parse estudio = new Parse();
     //Depurador estudio = new Depurador();
-    EjerciciosDeRepaso estudio = new EjerciciosDeRepaso();
+    //EjerciciosDeRepaso estudio = new EjerciciosDeRepaso();
+    //segundaTandaEJ.Ejercicio4 ejercicios = new segundaTandaEJ.Ejercicio4();
 
   }
 }
