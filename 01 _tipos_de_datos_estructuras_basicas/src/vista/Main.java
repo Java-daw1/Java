@@ -11,10 +11,11 @@ package vista;
 //import ejercicios.Calculoareas;
 //import ejercicios.Dniejercicio;
 //import ejercicios.Ejercicio01;
-//import ejercicios.PrimeraTandaEj;
-//import ejercicios.SegundatandaEj;
+import primeraTandaEJ.*;
+//import segundaTandaEJ.Ejercicio10;
 //import ejercicios.Parse;
-import ejerciciosDeRepaso2.Ejercicio1DeRepaso2;
+//import ejerciciosDeRepaso2.Ejercicio4DeRepaso2;
+//import estudioArray.EstudioArrayUnidimensional;
 
 
 public class Main {
@@ -28,14 +29,14 @@ public class Main {
     // Calculoareas calcularAreas = new Calculoareas();
     // Dniejercicio dni = new Dniejercicio();
     // EstudioEstructurasRepeticion estudio = new EstudioEstructurasRepeticion();
-    // PrimeraTandaEj estudio = new PrimeraTandaEj();
+    Ejercicio10 estudio = new Ejercicio10();
     // SegundatandaEj estudio= new SegundatandaEj();
     // Parse estudio = new Parse();
     // Depurador estudio = new Depurador();
     // EjerciciosDeRepaso estudio = new EjerciciosDeRepaso();
-    // segundaTandaEJ.Ejercicio4 ejercicios = new segundaTandaEJ.Ejercicio4();
-    ejerciciosDeRepaso2.Ejercicio2DeRepaso2 ejercicios = new ejerciciosDeRepaso2.Ejercicio2DeRepaso2();
-    
+    //segundaTandaEJ.Ejercicio10 ejercicios = new segundaTandaEJ.Ejercicio10();
+    //ejerciciosDeRepaso2.Ejercicio4DeRepaso2 ejercicios = new ejerciciosDeRepaso2.Ejercicio4DeRepaso2();
+    //estudioArray.EstudioArrayUnidimensional arrays = new estudioArray.EstudioArrayUnidimensional();
 
 
 

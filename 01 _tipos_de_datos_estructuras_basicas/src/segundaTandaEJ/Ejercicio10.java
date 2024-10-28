@@ -6,8 +6,8 @@ public class Ejercicio10 {
    public Ejercicio10() {
 
 // 10.- Realiza un programa que pida un número por teclado y que luego muestre ese número al revés.
-
-      Scanner leer = new Scanner(System.in);
+Scanner leer = new Scanner(System.in);
+      /*
 
       int numeroIntroducido = 0;
       int ultimaCifra = 0;
@@ -23,7 +23,47 @@ public class Ejercicio10 {
          resultado += ultimaCifra;
 
       }
-      System.out.println(resultado);
+      System.out.println(resultado);*/
+
+
+
+
+
+
+
+
+
+
+
+// 10.- Realiza un programa que pida un número por teclado y que luego muestre ese número al revés.
+
+System.out.println("introduce un numero");
+
+int ultimaCifra = 0;
+int numeroIntroducido = leer.nextInt();
+String resultado = "";
+
+for (int i = 0; numeroIntroducido >=1; i++) {
+
+   ultimaCifra = numeroIntroducido%10;
+   numeroIntroducido=numeroIntroducido/10;
+   resultado +=ultimaCifra;
+
+   
+}
+
+System.out.println(resultado);
+
+
+
+
+
+
+
+
+
+
+
 
    }
 }

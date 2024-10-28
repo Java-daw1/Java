@@ -7,8 +7,7 @@ public class Ejercicio8 {
 
         /*
          * 8- Escribe un programa que diga cuál es la primera cifra de un número entero
-         * introducido por teclado. Se permiten
-         * números de hasta 5 cifras.
+         * introducido por teclado. Se permiten números de hasta 5 cifras.
          */
 
         Scanner leer = new Scanner(System.in);

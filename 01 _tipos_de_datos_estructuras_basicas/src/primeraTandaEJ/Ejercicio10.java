@@ -34,6 +34,7 @@ public class Ejercicio10 {
         } else if (numero < 10000 && numero > 1000) {
 
         }
+        System.out.println(capicua);
     }
 
 }

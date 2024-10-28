@@ -21,12 +21,16 @@ public class Ejercicio9 {
 
         } else if (numero >= -9 && numero <= 9) {
             System.out.println("EL NUMERO TIENE 1 CIFRA");
+
         } else if (numero >= -99 && numero <= 99) {
             System.out.println("EL NUMERO TIENE 2 CIFRA");
+
         } else if (numero >= -999 && numero <= 999) {
             System.out.println("EL NUMERO TIENE 3 CIFRA");
+
         } else if (numero >= -9999 && numero <= 9999) {
             System.out.println("EL NUMERO TIENE 4 CIFRA");
+            
         } else if (numero >= -99999 && numero <= 99999) {
             System.out.println("EL NUMERO TIENE 5 CIFRA");
         }

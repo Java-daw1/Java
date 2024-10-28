@@ -3,7 +3,7 @@ package segundaTandaEJ;
 public class Ejercicio11 {
     public Ejercicio11() {
 
-/*11.- Realiza un programa que pida primero un número y a continuación undígito. El programa nos debe dar la posición (o posiciones)
+/*11.- Realiza un programa que pida primero un número y a continuación un dígito. El programa nos debe dar la posición (o posiciones)
 contando de izquierda a derecha que ocupa ese dígito en el número introducido.*/
 
         System.out.print("Introduzca un número entero: ");
