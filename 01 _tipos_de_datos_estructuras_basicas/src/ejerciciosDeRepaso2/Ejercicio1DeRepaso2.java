@@ -38,47 +38,47 @@ public class Ejercicio1DeRepaso2 {
         // numeros de intos que tendra el usuario para adivinar el numero
 
         int intentos = 5;
+        int intentosUsuarios = 0;
 
         // PROGRAMA
 
-        while (intentos > 0) {
+        while (intentos > intentosUsuarios) {
 
             if (limiteInferior == limiteSuperior) {
                 System.out.println("=================================================");
                 System.out.println("POR FAVOR INTRODUCE 2 NUMEROS DISTINTOS");
                 System.out.println("=================================================");
             }
-        //NUMERO QUE INTRODUCE EL USUARIO
+            // NUMERO QUE INTRODUCE EL USUARIO
 
             System.out.println("INTRODUCE UN NUMERO");
             int numeroIntroducido = leer.nextInt();
 
-        //SI EL NUMERO INTRODUCIDO ES IGUAL AL ALEATORIO
+            // SI EL NUMERO INTRODUCIDO ES IGUAL AL ALEATORIO
 
             if (numeroIntroducido == aleatorio) {
-                System.out.println("*****************************************");
-                System.out.println("FELICIDADES HAS ACERTADO EL NUMERO");
-                System.out.println("*****************************************");
+                System.out.println("**********************************************************************************");
+                System.out.println("FELICIDADES HAS ACERTADO EL NUMERO HAS ACERTADO EN " + intentosUsuarios + " INTENTOS");
+                System.out.println("**********************************************************************************");
                 break;
-        //SI EL NUMERO NTRODUCIDO ES MENOR QUE EL NUMERO RAMDOM
+
+                // SI EL NUMERO NTRODUCIDO ES MENOR QUE EL NUMERO RAMDOM
 
             } else if (numeroIntroducido > aleatorio) {
                 intentos--;
 
-                System.out.println(
-                        "------------------------------------------------------------------------------------");
+                System.out.println( "---------------------------------------------------------------------------------------------");
                 System.out.println("EL NUMERO ALEATORIO ES MENOR QUE EL QUE TIENES QUE ADIVINAR TE QUEDAN " + intentos + " INTENTOS");
-                System.out.println(
-                        "------------------------------------------------------------------------------------");
-        //SI EL NUMERO INTRODUCIDO ES MAYOR QUE EL NUMERO RANDOM
+                System.out.println( "--------------------------------------------------------------------------------------------");
+
+                // SI EL NUMERO INTRODUCIDO ES MAYOR QUE EL NUMERO RANDOM
+
             } else if (numeroIntroducido < aleatorio) {
                 intentos--;
 
-                System.out.println(
-                        "------------------------------------------------------------------------------------");
+                System.out.println( "--------------------------------------------------------------------------------------------");
                 System.out.println("EL NUMERO ALEATORIO ES MAYOR QUE EL QUE TIENES QUE ADIVINAR TE QUEDAN " + intentos + " INTENTOS");
-                System.out.println(
-                        "------------------------------------------------------------------------------------");
+                System.out.println( "--------------------------------------------------------------------------------------------");
 
             }
 
