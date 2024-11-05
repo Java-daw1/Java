@@ -24,6 +24,7 @@ public class ejercicioArray1 {
         System.out.println(elementos[0] + " " + elementos[1] + " " + elementos[2] + " " + elementos[3] + " "
                 + elementos[4] + " " + elementos[5] + " " + elementos[6] + " " + elementos[7] + " " + elementos[8] + " " + elementos[9]);
 
+
     }
 
     private int aleatorio(int limiteInferior, int limiteSuperior) {
