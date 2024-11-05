@@ -38,6 +38,7 @@ public class Calculoareas {
                 break;
             default:
                 break;
+                
         }
 
     }
