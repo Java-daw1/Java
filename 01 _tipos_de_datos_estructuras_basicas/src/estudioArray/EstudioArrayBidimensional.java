@@ -42,8 +42,6 @@ public class EstudioArrayBidimensional {
 
 int [] notaUni = notas4[3];
 
-System.out.println();
-
 
 
 

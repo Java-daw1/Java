@@ -17,6 +17,7 @@ package vista;
 //import ejerciciosDeRepaso2.Ejercicio4DeRepaso2;
 //import estudioArray.EstudioArrayUnidimensional;
 import estudioArray.EstudioArrayBidimensional;
+import estudioArray.Notas;
 
 
 public class Main {
@@ -39,8 +40,8 @@ public class Main {
     //ejerciciosDeRepaso2.Ejercicio4DeRepaso2 ejercicios = new ejerciciosDeRepaso2.Ejercicio4DeRepaso2();
     //estudioArray.EstudioArrayUnidimensional arrays = new estudioArray.EstudioArrayUnidimensional();
     //estudioArray.ejercicioArray2 estudio = new estudioArray.ejercicioArray2();
-    EstudioArrayBidimensional estudio = new EstudioArrayBidimensional();
-
+    //EstudioArrayBidimensional estudio = new EstudioArrayBidimensional();
+    Notas estudioo = new Notas();
 
 
 
