@@ -14,8 +14,9 @@ package vista;
 //import primeraTandaEJ.*;
 //import segundaTandaEJ.Ejercicio10;
 //import ejercicios.Parse;
-import ejerciciosDeRepaso2.Ejercicio4DeRepaso2;
+//import ejerciciosDeRepaso2.Ejercicio4DeRepaso2;
 //import estudioArray.EstudioArrayUnidimensional;
+import estudioArray.EstudioArrayBidimensional;
 
 
 public class Main {
@@ -37,7 +38,8 @@ public class Main {
     //segundaTandaEJ.Ejercicio10 ejercicios = new segundaTandaEJ.Ejercicio10();
     //ejerciciosDeRepaso2.Ejercicio4DeRepaso2 ejercicios = new ejerciciosDeRepaso2.Ejercicio4DeRepaso2();
     //estudioArray.EstudioArrayUnidimensional arrays = new estudioArray.EstudioArrayUnidimensional();
-    estudioArray.ejercicioArray1 estudio = new estudioArray.ejercicioArray1();
+    //estudioArray.ejercicioArray2 estudio = new estudioArray.ejercicioArray2();
+    EstudioArrayBidimensional estudio = new EstudioArrayBidimensional();
 
 
 

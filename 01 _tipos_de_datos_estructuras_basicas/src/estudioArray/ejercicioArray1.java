@@ -10,21 +10,28 @@ public class ejercicioArray1 {
         // Luego, recorre el array para encontrar y
         // mostrar el valor mínimo y el valor máximo.:
 
-    
-
-
         int [] aleatorios = generaAleatoriosSinRepeteicion(10,1,10);
                 
                 
-                
-                
-                
-                
-                
-                
-                
-                
+                String ale ="";
+                int min = aleatorios [0];
+                int max = aleatorios [0];
+                for (int i = 0; i < aleatorios.length; i++) {
+                    
+                    ale += aleatorios[i] + " ";
+                    if (aleatorios[i] < min) {
+                        min = aleatorios[i];
                     }
+                    if (aleatorios[i] > max) {
+                        max = aleatorios[i];
+                    }
+                }
+                
+                System.out.println(ale);
+                System.out.println("EL VALOR MINIMO ES "+ min);
+                System.out.println("EL VALOR MINIMO ES "+max);
+                
+            }
         
             private int[] generaAleatoriosSinRepeteicion(int cantidad, int limiteInferior, int limiteSuperior) {
              
@@ -45,11 +52,6 @@ public class ejercicioArray1 {
                 return chenchoCorleone;
             }
      
-        
-    
-
-
-
     }
 
 
