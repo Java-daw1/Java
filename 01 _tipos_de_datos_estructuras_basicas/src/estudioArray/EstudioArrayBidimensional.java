@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class EstudioArrayBidimensional {
     public EstudioArrayBidimensional() {
-/* 
+ 
         int[][] notas;
         notas = new int[3][4];
         notas[0][0] = 5;
@@ -15,12 +15,14 @@ public class EstudioArrayBidimensional {
         Scanner sc = new Scanner(System.in);
 
         for (int x = 0; x < notas.length; x++) {
+            
             for (int y = 0; y < notas[x].length; y++) {
+                
                 notas[x][y] = sc.nextInt();
             }
 
         }
-        System.out.println(notas);*/
+        System.out.println(notas);
 
         // intanciar array en una linea
 

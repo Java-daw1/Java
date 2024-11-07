@@ -39,7 +39,7 @@ public class EstudioArrayUnidimensional {
 
 
         for (int i = 0; i < nombres.length; i++) {
-            System.out.println(nombres[i]+ " : " + notas[i]);
+            System.out.println(nombres[i]+ " : ");
             
         }
         System.out.println("HAY "+ suspenso+ " SUSPENSOS");
