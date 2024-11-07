@@ -30,42 +30,23 @@ public class Notas {
             case 1:
 
                 mostrarAsignaturas(notas, asignaturas, alumnos);
-                System.out.println(mostrarAsignaturas(notas, asignaturas, alumnos));
+                    System.out.println(mostrarAsignaturas(notas, asignaturas, alumnos));
                 break;
             
             case 2:
 
-                mostrarBoletin(notas,asignaturas,alumnos)
-                System.out.println(mostrarBoletin(notas, asignaturas, alumnos));
-                break;
-            
-            
-            default:
-                break;
-                    }
-            
-    }
-
-    private String mostrarBoletin(int[][] notas, String[] asignaturas, String[] alumnos) {
-
-        Scanner sc = new Scanner(System.in);
-
-
-
-        int opcion = sc.nextInt();
-
-        switch (opcion) {
-            case 1:
                 
-                break;
-        
+                    
+                    break;
+                            
+                            
             default:
-                break;
+            break;
         }
-
-
-        return mostrarBoletin(notas, asignaturas, alumnos);
+                            
     }
+
+
 
     private String mostrarAsignaturas(int[][] notas, String[] asignaturas, String[] alumnos) {
 
