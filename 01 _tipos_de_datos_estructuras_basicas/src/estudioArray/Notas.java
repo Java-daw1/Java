@@ -31,6 +31,7 @@ public class Notas {
 
                 mostrarAsignaturas(notas, asignaturas, alumnos);
                     System.out.println(mostrarAsignaturas(notas, asignaturas, alumnos));
+                    
                 break;
             
             case 2:
