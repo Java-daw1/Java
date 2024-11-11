@@ -1,5 +1,6 @@
 package estudioArray;
 
+import java.nio.channels.Pipe.SourceChannel;
 import java.util.Scanner;
 
 public class Correccion {
@@ -9,7 +10,7 @@ public class Correccion {
 
         Scanner leer = new Scanner(System.in);
 
-        int[][] notas = { { 5, 6, 7, 5, 7, 3, 4, 6, 8, 1 },
+        int[][] notas = { { 5, 1, 7, 5, 7, 3, 4, 6, 8, 1 },
                           { 2, 4, 5, 3, 7, 6, 8, 4, 9, 10 },
                           { 4, 3, 8, 7, 6, 7, 4, 5, 6, 2 },
                           { 7, 8, 9, 6, 5, 7, 7, 8, 9, 10 } };
@@ -21,7 +22,6 @@ public class Correccion {
         System.out.println("***** ELIGE UNA OPCION *****");
         System.out.println("1. Mostrar notas de una asignatura");
         System.out.println("2. Muestra el boletin de un alumno y media");
-        System.out.println("3. Mostrar boletin si el alumno a aprobado y media");
 
         int opcion = leer.nextInt();
 
@@ -56,22 +56,26 @@ public class Correccion {
         System.out.println("**************************");
         System.out.println(alumnos[alumno]);
         System.out.println("**************************");
-        double suma=0;
+        int media=0;
+        int suspensos=0;
 
-        for (int c = 0; c < notas.length; c++) {
-            
-            System.out.println(asignaturas[c] + " : "+  notas[c][alumno]);
-                
-            }
         for (int f = 0; f < notas.length; f++) {
             
-            
+            System.out.println(asignaturas[f] + " : "+  notas[f][alumno]);
+                media+= notas[f][alumno] ;
+
+                if (notas[f][alumno]<5) {
+                    suspensos++;
+                }
         }
+            if (suspensos >2 || (notas[0][alumno]<5 && notas [1][alumno]<5)) {
+                    
+                    System.out.println("Nota media : "+ media / (double) notas.length + " promociona ");
+                    
+                    
+            }
 
-
-        }
-
-    
+    }
 
     private void muestraAsignaturas(int asignatura, String[] asignaturas, String[] alumnos, int[][] notas) {
         System.out.println("**************************");
