@@ -2,6 +2,8 @@ package vista;
 
 import estudioArray.Correccion;
 import estudioArray.Ejerciciosarraysv2;
+import estudioArray.Ejerciciosarraysv3;
+import estudioArray.Ejerciciosarraysv4;
 //import primeraTandaEJ.Ejercicio1;
 //import segundaTandaEJ.Ejercicio4;
 //import ejercicios.EjerciciosDeRepaso;
@@ -46,9 +48,9 @@ public class Main {
     //EstudioArrayBidimensional estudio = new EstudioArrayBidimensional();
     //Notas estudioo = new Notas();
     //Correccion hola = new Correccion();
-    Ejerciciosarraysv2 estudio = new Ejerciciosarraysv2();
-
-
+    //Ejerciciosarraysv2 estudio = new Ejerciciosarraysv2();
+    //Ejerciciosarraysv3 estudioo = new Ejerciciosarraysv3();
+    Ejerciciosarraysv4 estudiooo=new Ejerciciosarraysv4();
 
 
   }
