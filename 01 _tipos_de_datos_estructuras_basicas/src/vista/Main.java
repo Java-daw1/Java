@@ -1,6 +1,7 @@
 package vista;
 
 import estudioArray.Correccion;
+import estudioArray.Ejercicioarrays5;
 import estudioArray.Ejerciciosarraysv2;
 import estudioArray.Ejerciciosarraysv3;
 import estudioArray.Ejerciciosarraysv4;
@@ -50,7 +51,8 @@ public class Main {
     //Correccion hola = new Correccion();
     //Ejerciciosarraysv2 estudio = new Ejerciciosarraysv2();
     //Ejerciciosarraysv3 estudioo = new Ejerciciosarraysv3();
-    Ejerciciosarraysv4 estudiooo=new Ejerciciosarraysv4();
+    //Ejerciciosarraysv4 estudiooo=new Ejerciciosarraysv4();
+    Ejercicioarrays5 estudiooooo=new Ejercicioarrays5();
 
 
   }

@@ -44,7 +44,7 @@ public class Ejerciciosarraysv4 {
         } else {
 
             System.out.println("NO ES UN CUADRADO MAGICO");
-        }
+        }                                                
 
     }
 

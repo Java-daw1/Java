@@ -25,10 +25,10 @@ public class Ejerciciosarraysv2 {
             int maximofila = tabla[f][0];
 
             // recorre cada elemto en la fila
-            for (int c = 0; c < tabla[f].length; c++) {
+                for (int c = 0; c < tabla[f].length; c++) {
                 int valor = tabla[f][c];
 
-                // Actualizar el mínimo y máximo de la fila
+            // Actualizar el mínimo y máximo de la fila
                 if (valor < minimofila) {
                     minimofila = valor;
                 }
