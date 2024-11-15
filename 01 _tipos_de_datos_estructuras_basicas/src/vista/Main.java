@@ -1,10 +1,12 @@
 package vista;
 
 import estudioArray.Correccion;
+import estudioArray.Ejercicioarray6v2;
 import estudioArray.Ejercicioarrays5;
 import estudioArray.Ejerciciosarraysv2;
 import estudioArray.Ejerciciosarraysv3;
 import estudioArray.Ejerciciosarraysv4;
+import estudioArray.Ejerciciosarraysv6;
 //import primeraTandaEJ.Ejercicio1;
 //import segundaTandaEJ.Ejercicio4;
 //import ejercicios.EjerciciosDeRepaso;
@@ -46,7 +48,7 @@ public class Main {
     //segundaTandaEJ.Ejercicio10 ejercicios = new segundaTandaEJ.Ejercicio10();
     //ejerciciosDeRepaso2.Ejercicio4DeRepaso2 ejercicios = new ejerciciosDeRepaso2.Ejercicio4DeRepaso2();
     //estudioArray.EstudioArrayUnidimensional arrays = new estudioArray.EstudioArrayUnidimensional();
-    //estudioArray.ejercicioArray2 estudio = new estudioArray.ejercicioArray2();
+    //estudioArray.ejercicioArray1 estudioo = new estudioArray.ejercicioArray1();
     //EstudioArrayBidimensional estudio = new EstudioArrayBidimensional();
     //Notas estudioo = new Notas();
     //Correccion hola = new Correccion();
@@ -54,8 +56,9 @@ public class Main {
     //Ejerciciosarraysv3 estudioo = new Ejerciciosarraysv3();
     //Ejerciciosarraysv4 estudiooo=new Ejerciciosarraysv4();
     //Ejercicioarrays5 estudiooooo=new Ejercicioarrays5();
-    Estudioexcepciones estudio = new Estudioexcepciones();
-
+    //Estudioexcepciones estudio = new Estudioexcepciones();
+    //Ejerciciosarraysv6 estudio = new Ejerciciosarraysv6();
+    Ejercicioarray6v2 array = new Ejercicioarray6v2();
 
   }
 }
