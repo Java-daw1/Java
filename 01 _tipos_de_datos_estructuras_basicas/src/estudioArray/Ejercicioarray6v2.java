@@ -12,7 +12,11 @@ public class Ejercicioarray6v2 {
                 System.out.print("[" + aleatorios[i][j] + "]" + "");
             }
             System.out.println();
+
         }
+
+
+        
     }
 
     private int[][] generaAleatorios(int filas, int columnas, int limiteInferior, int limiteSuperior) {
