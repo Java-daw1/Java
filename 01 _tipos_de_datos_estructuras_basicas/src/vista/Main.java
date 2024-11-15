@@ -23,6 +23,7 @@ import estudioArray.Ejerciciosarraysv4;
 //import estudioArray.EstudioArrayUnidimensional;
 import estudioArray.EstudioArrayBidimensional;
 import estudioArray.Notas;
+import excepciones.Estudioexcepciones;
 import estudioArray.Ejerciciosarraysv2;
 
 
@@ -52,7 +53,8 @@ public class Main {
     //Ejerciciosarraysv2 estudio = new Ejerciciosarraysv2();
     //Ejerciciosarraysv3 estudioo = new Ejerciciosarraysv3();
     //Ejerciciosarraysv4 estudiooo=new Ejerciciosarraysv4();
-    Ejercicioarrays5 estudiooooo=new Ejercicioarrays5();
+    //Ejercicioarrays5 estudiooooo=new Ejercicioarrays5();
+    Estudioexcepciones estudio = new Estudioexcepciones();
 
 
   }
