@@ -2,7 +2,11 @@ package estudioArray;
 
 public class Ejercicioarray6v2 {
     public Ejercicioarray6v2() {
-
+        /*
+         * 6.- Diseñar un programa que me permita almacenar 10 boletos de primitiva,
+         * luego genere un sorteo y me diga
+         * cuantos aciertos tiene cada boleto.
+         */
         int[][] aleatorios = new int[10][6];
         aleatorios = generaAleatorios(10, 6, 1, 49);
 
@@ -15,7 +19,49 @@ public class Ejercicioarray6v2 {
 
         }
 
+        //GENERA EL SORTEO
+        System.out.println();
+        System.out.println("**** SORTEO ****");
 
+        int[] sorteo = new int[6];
+        sorteo = generaSorteoAleatorio(6, 1, 49);
+
+        for (int i = 0; i < sorteo.length; i++) {
+            System.out.print("[" + sorteo[i] + "]" + "");
+                
+        }
+        System.out.println();
+        //CUANTOS ACIERTOS TIENE CADA BOLETO
+        System.out.println();
+
+        int i = 0;
+        for (int j = 0; j < 6; j++) {
+            System.out.println(aleatorios[i][j]);
+            
+        }
+
+
+
+
+
+
+    }
+
+    private int[] generaSorteoAleatorio(int cantidad, int limiteInferior, int limiteSuperior) {
+
+        int [] sorteo = new int [cantidad];
+        // VARIABLES DEL BUCLE
+        
+        int ale = 0;
+        int x = 0;
+
+        // CREAR UN NUMERO RANDOM
+
+        for (x = 0; x < sorteo.length; x++) {
+            ale = (int) Math.floor(Math.random() * (limiteSuperior - limiteInferior + 1) + limiteInferior);
+            sorteo[x] = ale;
+        }
+            return sorteo;
         
     }
 
@@ -28,21 +74,21 @@ public class Ejercicioarray6v2 {
                 aleatorios[f][c] = (int) Math.floor(Math.random() * (limiteSuperior - limiteInferior + 1) + limiteInferior);
             }
             for (int i = 0; i < aleatorios.length; i++) {
-                while (viewRepeticionFila(aleatorios[i])==true){
+                while (viewRepeticionFila(aleatorios[i]) == true) {
                     for (int c = 0; c < aleatorios[f].length; c++) {
                         aleatorios[i][c] = (int) Math.floor(Math.random() * (limiteSuperior - limiteInferior + 1) + limiteInferior);
                     }
-                }                
+                }
             }
         }
         return aleatorios;
 
     }
 
-    public boolean viewRepeticionFila(int [] array){
-        for(int i=0; i<array.length; i++){
-            for(int j=0; j<array.length; j++){
-                if(i!=j && array[i]==array[j]){
+    public boolean viewRepeticionFila(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length; j++) {
+                if (i != j && array[i] == array[j]) {
                     return true;
                 }
             }
