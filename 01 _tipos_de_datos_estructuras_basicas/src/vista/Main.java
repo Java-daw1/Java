@@ -1,28 +1,30 @@
 package vista;
 
+import ejercicios.Ejercicio01;
 import estudioArray.Correccion;
 import estudioArray.Ejercicioarray6v2;
 import estudioArray.Ejercicioarrays5;
+import estudioArray.Ejerciciosarray7;
 import estudioArray.Ejerciciosarraysv2;
 import estudioArray.Ejerciciosarraysv3;
 import estudioArray.Ejerciciosarraysv4;
 import estudioArray.Ejerciciosarraysv6;
-//import primeraTandaEJ.Ejercicio1;
-//import segundaTandaEJ.Ejercicio4;
-//import ejercicios.EjerciciosDeRepaso;
-//import ejercicios.Depurador;
-//import estudio_estructuras_basicas.EstudioEstructurasCondicionales;
-//import estudio_estructuras_basicas.EstudioEstructurasRepeticion;
-//import estudio_estructuras_basicas.Estudio_tipo_de_datos;
-//import estudio_estructuras_basicas.Operadores_aritmeticos;
-//import ejercicios.Calculoareas;
-//import ejercicios.Dniejercicio;
-//import ejercicios.Ejercicio01;
-//import primeraTandaEJ.*;
-//import segundaTandaEJ.Ejercicio10;
-//import ejercicios.Parse;
-//import ejerciciosDeRepaso2.Ejercicio4DeRepaso2;
-//import estudioArray.EstudioArrayUnidimensional;
+import primeraTandaEJ.Ejercicio1;
+import segundaTandaEJ.Ejercicio4;
+import ejercicios.EjerciciosDeRepaso;
+import ejercicios.Depurador;
+import estudio_estructuras_basicas.EstudioEstructurasCondicionales;
+import estudio_estructuras_basicas.EstudioEstructurasRepeticion;
+import estudio_estructuras_basicas.Estudio_tipo_de_datos;
+import estudio_estructuras_basicas.Operadores_aritmeticos;
+import ejercicios.Calculoareas;
+import ejercicios.Dniejercicio;
+import ejercicios.Ejercicio01;
+import primeraTandaEJ.*;
+import segundaTandaEJ.Ejercicio10;
+import ejercicios.Parse;
+import ejerciciosDeRepaso2.Ejercicio4DeRepaso2;
+import estudioArray.EstudioArrayUnidimensional;
 import estudioArray.EstudioArrayBidimensional;
 import estudioArray.Notas;
 import excepciones.Estudioexcepciones;
@@ -58,7 +60,8 @@ public class Main {
     //Ejercicioarrays5 estudiooooo=new Ejercicioarrays5();
     //Estudioexcepciones estudio = new Estudioexcepciones();
     //Ejerciciosarraysv6 estudio = new Ejerciciosarraysv6();
-    Ejercicioarray6v2 array = new Ejercicioarray6v2();
+    //Ejercicioarray6v2 array = new Ejercicioarray6v2();
+    Ejerciciosarray7 siete = new Ejerciciosarray7();
 
   }
 }

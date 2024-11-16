@@ -3,55 +3,53 @@ package estudioArray;
 public class Ejercicioarray6v2 {
     public Ejercicioarray6v2() {
         /*
-         * 6.- Diseñar un programa que me permita almacenar 10 boletos de primitiva,
-         * luego genere un sorteo y me diga
-         * cuantos aciertos tiene cada boleto.
+          6.- Diseñar un programa que me permita almacenar 10 boletos de primitiva,
+          luego genere un sorteo y me diga
+          cuantos aciertos tiene cada boleto.
          */
         int[][] aleatorios = new int[10][6];
         aleatorios = generaAleatorios(10, 6, 1, 49);
-
+        // boletos
         for (int i = 0; i < aleatorios.length; i++) {
             for (int j = 0; j < aleatorios[i].length; j++) {
-
                 System.out.print("[" + aleatorios[i][j] + "]" + "");
             }
             System.out.println();
-
         }
 
-        //GENERA EL SORTEO
+        // GENERA EL SORTEO
+
         System.out.println();
         System.out.println("**** SORTEO ****");
+        System.out.println();
 
         int[] sorteo = new int[6];
         sorteo = generaSorteoAleatorio(6, 1, 49);
 
         for (int i = 0; i < sorteo.length; i++) {
             System.out.print("[" + sorteo[i] + "]" + "");
-                
+
         }
         System.out.println();
-        //CUANTOS ACIERTOS TIENE CADA BOLETO
-        System.out.println();
 
-        int i = 0;
-        for (int j = 0; j < 6; j++) {
-            System.out.println(aleatorios[i][j]);
-            
+        // CUANTOS ACIERTOS TIENE CADA BOLETO
+        int contador = 0;
+
+        for (int i = 0; i < aleatorios.length; i++) {
+            contador++;
+            System.out.println("BOLETO : " + "[" + contador + "]" + " NUMERO DE ACIERTOS : "
+                    + contarRepeticionFila(aleatorios[i], sorteo));
+
         }
-
-
-
-
-
 
     }
 
     private int[] generaSorteoAleatorio(int cantidad, int limiteInferior, int limiteSuperior) {
 
-        int [] sorteo = new int [cantidad];
+        int[] sorteo = new int[cantidad];
+
         // VARIABLES DEL BUCLE
-        
+
         int ale = 0;
         int x = 0;
 
@@ -61,8 +59,8 @@ public class Ejercicioarray6v2 {
             ale = (int) Math.floor(Math.random() * (limiteSuperior - limiteInferior + 1) + limiteInferior);
             sorteo[x] = ale;
         }
-            return sorteo;
-        
+        return sorteo;
+
     }
 
     private int[][] generaAleatorios(int filas, int columnas, int limiteInferior, int limiteSuperior) {
@@ -84,7 +82,7 @@ public class Ejercicioarray6v2 {
         return aleatorios;
 
     }
-
+    
     public boolean viewRepeticionFila(int[] array) {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length; j++) {
@@ -94,6 +92,22 @@ public class Ejercicioarray6v2 {
             }
         }
         return false;
+    }
+
+    //contar si un boleto se repite
+    public int contarRepeticionFila(int[] array, int[] sorteo) {
+        int contador = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < sorteo.length; j++) {
+                if (i != j && array[i] == sorteo[j]) {
+                    contador++;
+
+                }
+
+            }
+        }
+        return contador;
     }
 
 }
