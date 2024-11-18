@@ -1,7 +1,7 @@
 package vista;
 
 import ejercicios.Ejercicio01;
-import estudioArray.Caballo;
+import estudioArray.Cartas;
 import estudioArray.Correccion;
 import estudioArray.Ejercicioarray6v2;
 import estudioArray.Ejercicioarrays5;
@@ -9,7 +9,6 @@ import estudioArray.Ejerciciosarray7;
 import estudioArray.Ejerciciosarraysv2;
 import estudioArray.Ejerciciosarraysv3;
 import estudioArray.Ejerciciosarraysv4;
-import estudioArray.Ejerciciosarraysv6;
 import primeraTandaEJ.Ejercicio1;
 import segundaTandaEJ.Ejercicio4;
 import ejercicios.EjerciciosDeRepaso;
@@ -28,6 +27,7 @@ import ejerciciosDeRepaso2.Ejercicio4DeRepaso2;
 import estudioArray.EstudioArrayUnidimensional;
 import estudioArray.EstudioArrayBidimensional;
 import estudioArray.Notas;
+import estudioArray.caballov2;
 import excepciones.Estudioexcepciones;
 import estudioArray.Ejerciciosarraysv2;
 
@@ -63,7 +63,8 @@ public class Main {
     //Ejerciciosarraysv6 estudio = new Ejerciciosarraysv6();
     //Ejercicioarray6v2 array = new Ejercicioarray6v2();
     //Ejerciciosarray7 siete = new Ejerciciosarray7();
-    Caballo ajedrez = new Caballo();
-
+    //Caballo ajedrez = new Caballo();
+    //caballov2 ajedrez = new caballov2();
+    Cartas juego = new Cartas();
   }
 }
