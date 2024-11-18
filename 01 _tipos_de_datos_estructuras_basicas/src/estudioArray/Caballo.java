@@ -21,6 +21,9 @@ public class Caballo {
         // formatear tablero
         int[][] darFormato = tablero;
         //imprime el tablero formtado
+        System.out.println("");
+        System.out.println("*****  tablero con formato  *****");
+        System.out.println("");
         formatoTablero(tablero);
 
 
