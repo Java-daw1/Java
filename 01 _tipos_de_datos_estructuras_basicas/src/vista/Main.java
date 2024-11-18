@@ -1,6 +1,7 @@
 package vista;
 
 import ejercicios.Ejercicio01;
+import estudioArray.Caballo;
 import estudioArray.Correccion;
 import estudioArray.Ejercicioarray6v2;
 import estudioArray.Ejercicioarrays5;
@@ -61,7 +62,8 @@ public class Main {
     //Estudioexcepciones estudio = new Estudioexcepciones();
     //Ejerciciosarraysv6 estudio = new Ejerciciosarraysv6();
     //Ejercicioarray6v2 array = new Ejercicioarray6v2();
-    Ejerciciosarray7 siete = new Ejerciciosarray7();
+    //Ejerciciosarray7 siete = new Ejerciciosarray7();
+    Caballo ajedrez = new Caballo();
 
   }
 }

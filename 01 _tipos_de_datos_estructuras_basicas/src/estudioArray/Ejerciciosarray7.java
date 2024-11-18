@@ -11,7 +11,7 @@ public class Ejerciciosarray7 {
         int[] boletoUsuario = new int[6];
 
         generarBoleto(boletoUsuario);
-        int aciertos =0;
+        int aciertos = 0;
         int intentos = 0;
 
         do {
@@ -21,31 +21,20 @@ public class Ejerciciosarray7 {
             for (int i = 0; i < boletoUsuario.length; i++) {
                 if (seRepite(boletoSorteo, boletoUsuario[i])) {
                     aciertos++;
-                } 
+                }
             }
         } while (aciertos != 6);
 
-        System.out.println(Arrays.toString(boletoUsuario ) + " | " + Arrays.toString(boletoSorteo) + intentos );
-        
-        
+        System.out.println(Arrays.toString(boletoUsuario) + " | " + Arrays.toString(boletoSorteo) + intentos);
+
     }
-
-
-
-
-
-
-
-
-
-
 
     private int[] generarBoleto(int[] boletoUsuario) {
 
         for (int i = 0; i < boletoUsuario.length; i++) {
             boletoUsuario[i] = generarRandom(boletoUsuario);
         }
-        
+
         return boletoUsuario;
     }
 
