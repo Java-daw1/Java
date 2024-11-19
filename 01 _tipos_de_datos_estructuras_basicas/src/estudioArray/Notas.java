@@ -1,6 +1,6 @@
 package estudioArray;
 
-import java.nio.channels.Pipe.SourceChannel;
+
 import java.util.Scanner;
 
 public class Notas {
@@ -12,9 +12,9 @@ public class Notas {
         Scanner leer = new Scanner(System.in);
 
         int[][] notas = { { 5, 6, 7, 5, 7, 3, 4, 6, 8, 1 },
-                          { 2, 4, 5, 3, 7, 6, 8, 4, 9, 10 },
-                          { 4, 3, 8, 7, 6, 7, 4, 5, 6, 2 },
-                          { 7, 8, 9, 6, 5, 7, 7, 8, 9, 10 } };
+                { 2, 4, 5, 3, 7, 6, 8, 4, 9, 10 },
+                { 4, 3, 8, 7, 6, 7, 4, 5, 6, 2 },
+                { 7, 8, 9, 6, 5, 7, 7, 8, 9, 10 } };
 
         String[] alumnos = { "Luis", "Cristian", "Alex", "Nacho", "Victo", "Manuel", "Alvaro", "Pablo", "Dani",
                 "Diego" };
@@ -30,24 +30,19 @@ public class Notas {
             case 1:
 
                 mostrarAsignaturas(notas, asignaturas, alumnos);
-                    System.out.println(mostrarAsignaturas(notas, asignaturas, alumnos));
-                    
+                System.out.println(mostrarAsignaturas(notas, asignaturas, alumnos));
+
                 break;
-            
+
             case 2:
 
-                
-                    
-                    break;
-                            
-                            
+                break;
+
             default:
-            break;
+                break;
         }
-                            
+
     }
-
-
 
     private String mostrarAsignaturas(int[][] notas, String[] asignaturas, String[] alumnos) {
 

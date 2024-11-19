@@ -10,6 +10,7 @@ import estudioArray.Ejerciciosarraysv2;
 import estudioArray.Ejerciciosarraysv3;
 import estudioArray.Ejerciciosarraysv4;
 import primeraTandaEJ.Ejercicio1;
+import reaciendoEjercicios.Fibonaci;
 import segundaTandaEJ.Ejercicio4;
 import ejercicios.EjerciciosDeRepaso;
 import ejercicios.Depurador;
@@ -65,6 +66,7 @@ public class Main {
     //Ejerciciosarray7 siete = new Ejerciciosarray7();
     //Caballo ajedrez = new Caballo();
     //caballov2 ajedrez = new caballov2();
-    Cartas juego = new Cartas();
+    //Cartas juego = new Cartas();
+    Fibonaci repaso = new Fibonaci();
   }
 }
