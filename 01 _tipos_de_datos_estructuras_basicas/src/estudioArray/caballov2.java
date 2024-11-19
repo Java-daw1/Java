@@ -14,8 +14,8 @@ public class caballov2 {
         rellenaTablero(tablero);
 
         // Posición inicial del caballo
-        int caballoX = 3; // Fila
-        int caballoY = 3; // Columna
+        int caballoX = 0; // Fila
+        int caballoY = 0; // Columna
 
         // Colocar el caballo en el tablero
         tablero[caballoX][caballoY] = 2;
