@@ -62,14 +62,7 @@ public class Cartas {
     private int generacartasAleatoria(int[] cartas, int[][] partida) {
         int n = 0;
         // genera un numero ramdom y comprueba que no este ya en el array
-        
-        
-
             n = (int) Math.floor(Math.random() * (cartas.length - 1 + 1) + 1);
-
-       
-            
-
         return n;
 
     }
