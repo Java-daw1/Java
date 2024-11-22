@@ -28,6 +28,7 @@ import ejerciciosDeRepaso2.Ejercicio4DeRepaso2;
 import estudioArray.EstudioArrayUnidimensional;
 import estudioArray.EstudioArrayBidimensional;
 import estudioArray.Notas;
+import estudioArray.Votaciones;
 import estudioArray.caballov2;
 import excepciones.Estudioexcepciones;
 import estudioArray.Ejerciciosarraysv2;
@@ -67,6 +68,7 @@ public class Main {
     //Caballo ajedrez = new Caballo();
     //caballov2 ajedrez = new caballov2();
     //Cartas juego = new Cartas();
-    Fibonaci repaso = new Fibonaci();
+    //Fibonaci repaso = new Fibonaci();
+    Votaciones estudio = new Votaciones();
   }
 }
