@@ -59,7 +59,7 @@ public class Main {
     //Correccion hola = new Correccion();
     //Ejerciciosarraysv2 estudio = new Ejerciciosarraysv2();
     //Ejerciciosarraysv3 estudioo = new Ejerciciosarraysv3();
-    //Ejerciciosarraysv4 estudiooo=new Ejerciciosarraysv4();
+    Ejerciciosarraysv4 estudiooo=new Ejerciciosarraysv4();
     //Ejercicioarrays5 estudiooooo=new Ejercicioarrays5();
     //Estudioexcepciones estudio = new Estudioexcepciones();
     //Ejerciciosarraysv6 estudio = new Ejerciciosarraysv6();
