@@ -9,6 +9,13 @@
             "name": "Main",
             "request": "launch",
             "mainClass": "vista.Main",
+            "projectName": "01 _tipos_de_datos_estructuras_basicas_d21b4b4c"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "vista.Main",
             "projectName": "01 _tipos_de_datos_estructuras_basicas_efa438c5"
         },
         {

@@ -27,8 +27,6 @@ public class Votaciones {
         arrayPrincipal[i][0]=votos[i];
        }
 
-       fo
-
 
         return;
     }
