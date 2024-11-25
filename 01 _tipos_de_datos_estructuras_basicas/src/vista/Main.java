@@ -63,7 +63,7 @@ public class Main {
     //Ejerciciosarraysv4 estudiooo=new Ejerciciosarraysv4();
     //Ejercicioarrays5 estudiooooo=new Ejercicioarrays5();
     //Estudioexcepciones estudio = new Estudioexcepciones();
-    //Ejerciciosarraysv6 estudio = new Ejerciciosarraysv6();
+    Ejerciciosarraysv4 estudio = new Ejerciciosarraysv4();
     //Ejercicioarray6v2 array = new Ejercicioarray6v2();
     //Ejerciciosarray7 siete = new Ejerciciosarray7();
     //Caballo ajedrez = new Caballo();
@@ -71,6 +71,6 @@ public class Main {
     //Cartas juego = new Cartas();
     //Fibonaci repaso = new Fibonaci();
     //Votaciones estudio = new Votaciones();
-    EstudioCadenas estudio = new EstudioCadenas();
+    //EstudioCadenas estudio = new EstudioCadenas();
   }
 }
