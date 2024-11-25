@@ -1,6 +1,8 @@
 package estudioArray;
 
 public class Ejerciciosarraysv4 {
+    int sumaReferencia = 0;
+
     public Ejerciciosarraysv4() {
 
         /*
@@ -15,87 +17,85 @@ public class Ejerciciosarraysv4 {
                 { 4, 12, 25, 8, 16 },
                 { 17, 5, 13, 21, 9 },
                 { 10, 18, 1, 14, 22 },
-                { 23, 6, 19, 2, 15 },};
+                { 23, 6, 19, 2, 15 }, };
 
-        // suma diagonal 1
+        boolean sumaFilaIgual = false, sumaColumna = false, sumaDiagonalIgual = false;
 
-        int sumaDiagonal1 = diagonal1(tabla);
-        System.out.println(sumaDiagonal1);
+        sumaFilaIgual = sumaFila(tabla);
+        System.out.println(sumaFilaIgual);
 
-        // suma diagonal 2
+        sumaColumna = sumaColumna(tabla);
+        System.out.println(sumaColumna);
 
-        int sumaDiagonal2 = diagonal2(tabla);
-        System.out.println(sumaDiagonal2);
+        sumaDiagonalIgual = sumaDiagonalPrincipal(tabla) == sumaReferencia
+                && sumaDiagonalInversa(tabla) == sumaReferencia;
 
-        // suma de las columnas
-
-        int sumaColumnas = Columnas(tabla);
-        System.out.println(sumaColumnas);
-
-        // suma filas
-
-        int sumaFilas = Filas(tabla);
-        System.out.println(sumaFilas);
-
-        // COMPROBAMOS SI ES UN CUADRADO MAGICO
-
-        if (sumaDiagonal1 == sumaDiagonal2 && sumaColumnas == sumaFilas) {
-            System.out.println("ES CUADRADO MAGICO");
-        } else {
-
-            System.out.println("NO ES UN CUADRADO MAGICO");
-        }                                                
-
+        if (sumaFilaIgual && sumaColumna && sumaDiagonalIgual) {
+            System.out.println("es un cuadrado magico");
+        } else
+            System.out.println("no es un cuadrado magico");
     }
 
-    private int diagonal2(int[][] tabla) {
-
-        int suma = 0;
-        int n = tabla.length;
-
-        for (int i = 0; i < n; i++) {
-            suma += tabla[i][n - i - 1];
+    private int sumaDiagonalInversa(int[][] tabla) {
+        int sumaDiagonal2 = 0;
+        int c = tabla.length - 1;
+        for (int f = 0; f < tabla.length; f++) {
+            sumaDiagonal2 += tabla[f][c--];
         }
-        return suma;
+        return sumaDiagonal2;
     }
 
-    private int Filas(int[][] tabla) {
-
-        int suma = 0;
-
+    private int sumaDiagonalPrincipal(int[][] tabla) {
+        int sumaDiagonal1 = 0;
         for (int f = 0; f < tabla.length; f++) {
             for (int c = 0; c < tabla[f].length; c++) {
-
-                suma += tabla[f][c];
-            }
-        }
-        return suma;
-    }
-
-    private int Columnas(int[][] tabla) {
-
-        int suma = 0;
-        for (int c = 0; c < tabla.length; c++) {
-            for (int f = 0; f < tabla[c].length; f++) {
-
-                suma += tabla[f][c];
-            }
-        }
-        return suma;
-    }
-
-    private int diagonal1(int[][] tabla) {
-        int suma = 0;
-        for (int f = 0; f < tabla.length; f++) {
-
-            for (int c = 0; c < tabla[f].length; c++) {
-
                 if (f == c) {
-
-                    suma += tabla[f][c];
+                    sumaDiagonal1 += tabla[f][c];
                 }
             }
         }
-        return suma;
+        return sumaDiagonal1;
+    }
+
+    private boolean sumaColumna(int[][] tabla) {
+        for (int f = 0; f < tabla.length; f++) {
+            sumaReferencia+= tabla [f][0]
+        }
+
+        int sumaColumna = 0;
+
+        for (int f = 0; f < tabla.length; f++) {
+            for (int c = 0; c < tabla[f].length; c++) {
+                sumaColumna += tabla[f][c];
+            }
+            if (sumaColumna != sumaReferencia) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean sumaFila(int[][] tabla) {
+
+        for (int c = 0; c < tabla.length; c++) {
+
+            sumaReferencia += tabla[0][c];
+
+        }
+
+        int sumaFila = 0;
+
+        for (int f = 0; f < tabla.length; f++) {
+            for (int c = 0; c < tabla[f].length; c++) {
+
+                sumaFila += tabla[f][c];
+
+            }
+            if (sumaFila != sumaReferencia) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
