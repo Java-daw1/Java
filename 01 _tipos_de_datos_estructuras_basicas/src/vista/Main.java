@@ -18,6 +18,8 @@ import estudio_estructuras_basicas.EstudioEstructurasCondicionales;
 import estudio_estructuras_basicas.EstudioEstructurasRepeticion;
 import estudio_estructuras_basicas.Estudio_tipo_de_datos;
 import estudio_estructuras_basicas.Operadores_aritmeticos;
+import cadenas.Ejercicio1Cadenas;
+import cadenas.Ejercicio2Cadenas;
 import cadenas.EstudioCadenas;
 import ejercicios.Calculoareas;
 import ejercicios.Dniejercicio;
@@ -70,7 +72,9 @@ public class Main {
     //caballov2 ajedrez = new caballov2();
     //Cartas juego = new Cartas();
     //Fibonaci repaso = new Fibonaci();
-    Votaciones estudio = new Votaciones();
+    //Votaciones estudio = new Votaciones();
     //EstudioCadenas estudio = new EstudioCadenas();
+    //Ejercicio1Cadenas leer = new Ejercicio1Cadenas();
+    Ejercicio2Cadenas sc = new Ejercicio2Cadenas();
   }
 }
