@@ -20,6 +20,8 @@ import estudio_estructuras_basicas.Estudio_tipo_de_datos;
 import estudio_estructuras_basicas.Operadores_aritmeticos;
 import cadenas.Ejercicio1Cadenas;
 import cadenas.Ejercicio2Cadenas;
+import cadenas.EjercicioDniCadenas;
+import cadenas.EjercicioISBN;
 import cadenas.EstudioCadenas;
 import ejercicios.Calculoareas;
 import ejercicios.Dniejercicio;
@@ -75,6 +77,9 @@ public class Main {
     //Votaciones estudio = new Votaciones();
     //EstudioCadenas estudio = new EstudioCadenas();
     //Ejercicio1Cadenas leer = new Ejercicio1Cadenas();
-    Ejercicio2Cadenas sc = new Ejercicio2Cadenas();
+    //Ejercicio2Cadenas sc = new Ejercicio2Cadenas();
+    //EjercicioDniCadenas sc = new EjercicioDniCadenas();
+    EjercicioISBN sc = new EjercicioISBN();
+    /*tarjeta de claves programa que muestre en pantalla una tarjeta de claves */
   }
 }
