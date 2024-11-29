@@ -23,6 +23,7 @@ import cadenas.Ejercicio2Cadenas;
 import cadenas.EjercicioDniCadenas;
 import cadenas.EjercicioISBN;
 import cadenas.EstudioCadenas;
+import cadenas.Isbnv2;
 import ejercicios.Calculoareas;
 import ejercicios.Dniejercicio;
 import ejercicios.Ejercicio01;
@@ -79,7 +80,8 @@ public class Main {
     //Ejercicio1Cadenas leer = new Ejercicio1Cadenas();
     //Ejercicio2Cadenas sc = new Ejercicio2Cadenas();
     //EjercicioDniCadenas sc = new EjercicioDniCadenas();
-    EjercicioISBN sc = new EjercicioISBN();
+    //EjercicioISBN sc = new EjercicioISBN();
+    Isbnv2 leer = new Isbnv2();
     /*tarjeta de claves programa que muestre en pantalla una tarjeta de claves */
   }
 }

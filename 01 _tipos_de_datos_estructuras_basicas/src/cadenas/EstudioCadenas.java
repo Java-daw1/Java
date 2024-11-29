@@ -13,11 +13,10 @@ public class EstudioCadenas {
         //devuelve la longitud de la String , incluye espacios en blanco
         int tam = cadena.length();
         System.out.println( "el tamaño de " +cadena+ "= " + tam);
+
         /* char chatAT (int indice) devuelve el caracter asociado al indice que se le pasa como argumento
           de ls string sobre la que se aplica el metodo. se el indice no existe se lanza una StringIndexOutOfBoundsException
-          que hereda de indexOutOBounsException. MUY USADO
-         */
-
+          que hereda de indexOutOBounsException. MUY USADO */
          System.out.println("==========================");
          System.out.println("==========charAT============");
          System.out.println("caracter = " + cadena.charAt(0));

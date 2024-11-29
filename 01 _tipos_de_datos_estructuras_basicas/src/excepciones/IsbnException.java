@@ -5,7 +5,7 @@ public class IsbnException extends Exception {
     public IsbnException(){
 
 
-        super("");
+        super("Por favor introduzca un isbn correcto");
     }
 
 }
