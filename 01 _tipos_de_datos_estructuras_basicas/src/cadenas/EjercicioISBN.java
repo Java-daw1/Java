@@ -1,13 +1,18 @@
 package cadenas;
 
 import java.time.chrono.IsoChronology;
-
+import java.util.Scanner;
+// 978-84-415-2682-2
 public class EjercicioISBN {
     public EjercicioISBN() {
 
-        String isbn = "978-84-415-2682-2";
-        isbn = isbn.replace("-", "");
+        Scanner sc = new Scanner(System.in);
+            System.out.println("INTRODUCE UN ISBN VALIDO");
+            String isbn = sc.nextLine();
+            isbn = isbn.replace("-", "");
 
+        
+            
         String isbnSinNumControl = isbn.substring(0, 12); // isbn sin numero de control
         char numControlChar = isbn.charAt(12);
         int numControl = numControlChar - '0';
@@ -28,7 +33,7 @@ public class EjercicioISBN {
         // caculo del digito de control
         int calculaResto = sumaResultados % 10;
         int calculaDigitoDeControl = 10 - calculaResto;
-        System.out.println("Calculo del digito de control: " + calculaDigitoDeControl+"\n");
+        System.out.println("Calculo del digito de control: " + calculaDigitoDeControl + "\n");
 
         // saber si el numero de control es igual que el que hemos sacado
         System.out.println("************************************************");
