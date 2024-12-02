@@ -20,34 +20,27 @@ public class ContrasenaSegura {
     }
 
     private void compruebaContraseña(String comprobarContraseña) {
-        String resultado;
-        boolean esSegura = true;
+
+        boolean longitud = false;
+        boolean tieneMayusculas = false;
+        boolean tieneMinusculas = false;
+        boolean tieneNumeros = false;
+        boolean tieneCaracteresEsp = false;
 
         for (int i = 0; i < comprobarContraseña.length(); i++) {
 
-            comprobarContraseña.charAt(i);
-            if (comprobarContraseña.length() < 7) {
+            if (comprobarContraseña.length() >= 8) {
+                longitud = true;
 
-                esSegura = false;
-                System.out.println("Error : La contraseña tiene que ser mayor de 7 caracteres");
+            } else if (Character.isUpperCase(comprobarContraseña.charAt(i))) {
+                tieneMayusculas = true;
 
+            } else if (Character.isLowerCase(comprobarContraseña.charAt(i))) {
+                tieneMinusculas = true;
+
+            } else if (Character.isDigit(comprobarContraseña.charAt(i))) {
+                tieneNumeros = true;
             }
-
-            else if (comprobarContraseña.charAt(i) == 'ñ' || comprobarContraseña.charAt(i) == 'Ñ') {
-                esSegura = false;
-                System.out.println("Error : La contraseña no puede contener el caracter  ñ o Ñ");
-
-            }
-
-            else if (Character.isUpperCase(comprobarContraseña.charAt(i)) && Character.isLowerCase(comprobarContraseña.charAt(i))) {
-                esSegura = true;
-                
-
-            } else{
-                esSegura = false;
-                
-            }
-            
 
         }
 
