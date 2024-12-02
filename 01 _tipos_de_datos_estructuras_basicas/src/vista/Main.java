@@ -18,6 +18,7 @@ import estudio_estructuras_basicas.EstudioEstructurasCondicionales;
 import estudio_estructuras_basicas.EstudioEstructurasRepeticion;
 import estudio_estructuras_basicas.Estudio_tipo_de_datos;
 import estudio_estructuras_basicas.Operadores_aritmeticos;
+import cadenas.ContrasenaSegura;
 import cadenas.Ejercicio1Cadenas;
 import cadenas.Ejercicio2Cadenas;
 import cadenas.EjercicioDniCadenas;
@@ -81,7 +82,7 @@ public class Main {
     //Ejercicio2Cadenas sc = new Ejercicio2Cadenas();
     //EjercicioDniCadenas sc = new EjercicioDniCadenas();
     //EjercicioISBN sc = new EjercicioISBN();
-    Isbnv2 leer = new Isbnv2();
-    /*tarjeta de claves programa que muestre en pantalla una tarjeta de claves */
+    //Isbnv2 leer = new Isbnv2();
+   ContrasenaSegura contraseña = new ContrasenaSegura();
   }
 }

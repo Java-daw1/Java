@@ -28,7 +28,7 @@ public class Isbnv2 {
         boolean correcto = true; // esto se devulve cuado lo compruebe
 
         isbnCadena = isbnCadena.replace("-", "").trim();
-        isbnCadena = isbnCadena.replace(" ", "");
+        isbnCadena = isbnCadena.replace(" ", "").trim();
 
         if (isbnCadena.length() != 13) { // si el isbn es mayor de 13 caracteres es incorrecto y llamamos al a excepcion
             throw new IsbnException();
