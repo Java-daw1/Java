@@ -13,14 +13,14 @@ public class ContrasenaSegura {
          * y caracteres especiales.
          */
 
-        String comprobarContraseña = "iiiiiiioI";
+        String comprobarContraseña = "iiiiiiioI1%";
 
         compruebaContraseña(comprobarContraseña);
 
     }
 
     private void compruebaContraseña(String comprobarContraseña) {
-
+        
         boolean longitud = false;
         boolean tieneMayusculas = false;
         boolean tieneMinusculas = false;
@@ -32,16 +32,31 @@ public class ContrasenaSegura {
             if (comprobarContraseña.length() >= 8) {
                 longitud = true;
 
-            } else if (Character.isUpperCase(comprobarContraseña.charAt(i))) {
+            }
+            if (Character.isUpperCase(comprobarContraseña.charAt(i))) {
                 tieneMayusculas = true;
 
-            } else if (Character.isLowerCase(comprobarContraseña.charAt(i))) {
+            }
+            if (Character.isLowerCase(comprobarContraseña.charAt(i))) {
                 tieneMinusculas = true;
 
-            } else if (Character.isDigit(comprobarContraseña.charAt(i))) {
+            }
+            if (Character.isDigit(comprobarContraseña.charAt(i))) {
                 tieneNumeros = true;
             }
+            if (!Character.isLetterOrDigit(i)) {
+                tieneCaracteresEsp = true;
+            }
 
+        }
+
+        if (longitud == true && tieneCaracteresEsp == true && tieneNumeros == true && tieneMinusculas == true
+                && tieneMayusculas == true) {
+
+            System.out.println("La contraseña es segura");
+
+        } else {
+            System.out.println("la contraseña no es segura");
         }
 
     }
