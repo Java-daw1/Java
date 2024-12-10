@@ -25,6 +25,7 @@ import cadenas.EjercicioDniCadenas;
 import cadenas.EjercicioISBN;
 import cadenas.EstudioCadenas;
 import cadenas.Isbnv2;
+import cadenas.Tute;
 import ejercicios.Calculoareas;
 import ejercicios.Dniejercicio;
 import ejercicios.Ejercicio01;
@@ -83,6 +84,7 @@ public class Main {
     //EjercicioDniCadenas sc = new EjercicioDniCadenas();
     //EjercicioISBN sc = new EjercicioISBN();
     //Isbnv2 leer = new Isbnv2();
-   ContrasenaSegura contraseña = new ContrasenaSegura();
+    //ContrasenaSegura contraseña = new ContrasenaSegura();
+    Tute sc = new Tute();
   }
 }
