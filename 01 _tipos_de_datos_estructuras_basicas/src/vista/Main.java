@@ -25,6 +25,7 @@ import cadenas.EjercicioDniCadenas;
 import cadenas.EjercicioISBN;
 import cadenas.EstudioCadenas;
 import cadenas.Isbnv2;
+import cadenas.TarjetaDeClave;
 import cadenas.Tute;
 import ejercicios.Calculoareas;
 import ejercicios.Dniejercicio;
@@ -33,6 +34,7 @@ import primeraTandaEJ.*;
 import segundaTandaEJ.Ejercicio10;
 import ejercicios.Parse;
 import ejerciciosDeRepaso2.Ejercicio4DeRepaso2;
+import ejerciciosExamenTrimestre1.CineCampa;
 import estudioArray.EstudioArrayUnidimensional;
 import estudioArray.EstudioArrayBidimensional;
 import estudioArray.Notas;
@@ -85,6 +87,8 @@ public class Main {
     //EjercicioISBN sc = new EjercicioISBN();
     //Isbnv2 leer = new Isbnv2();
     //ContrasenaSegura contraseña = new ContrasenaSegura();
-    Tute sc = new Tute();
+    //Tute sc = new Tute();
+  //CineCampa sc= new CineCampa();  
+  TarjetaDeClave dfjdfj = new TarjetaDeClave();
   }
 }

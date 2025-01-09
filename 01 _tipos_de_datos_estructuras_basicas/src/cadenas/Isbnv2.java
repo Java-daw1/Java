@@ -65,7 +65,7 @@ public class Isbnv2 {
 
          int digitoControlEntero= Integer.parseInt(Character.toString(dc)); // pasa dc que es una cadena a entero
 
-        if (digitoControl != digitoControl) {// si el carlculo digitoControl es diferente de el que hemos sacado de la cadena lanzamos una excepcion.
+        if (digitoControl != dc) {// si el carlculo digitoControl es diferente de el que hemos sacado de la cadena lanzamos una excepcion.
             throw new IsbnException();
         }
         return correcto;
